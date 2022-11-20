@@ -1,4 +1,13 @@
+name: testsharedlib
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'feature/**'
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   build:
   uses:
-    ankursrivastva/gitaction5/.github/workflows/docker.yaml@master
+    ankursrivastva/gitaction5/.github/workflows/docker.yaml@main
