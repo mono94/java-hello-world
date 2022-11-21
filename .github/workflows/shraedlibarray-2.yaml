@@ -1,0 +1,5 @@
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ankursrivastva/gitaction5/.github/workflows/docker.yaml@main
