@@ -1,13 +1,10 @@
 name: Test
+description: 'composite run action'
 
-on: push
-
-jobs:
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-
+runs:
+  using: "composite"
+  steps: 
     - name: Echo
+      shell: bash
       run: |
         echo Heyyyyy
