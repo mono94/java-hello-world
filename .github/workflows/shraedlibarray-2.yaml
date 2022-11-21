@@ -1,5 +1,5 @@
 jobs:
-  publish:
-    runs-on: ubuntu-latest
+  released:
     steps:
+      - name: Build
       - uses: ankursrivastva/gitaction5/.github/workflows/docker.yaml@main
